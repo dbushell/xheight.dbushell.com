@@ -20,7 +20,7 @@ if ( $paged >= 2 || $page >= 2 ) {
 <?php }} ?>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
-		<link href="http://fonts.googleapis.com/css?family=Tinos:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Tinos:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
 		<!--<script src="js/respond.min.js"></script>-->
 <?php wp_head(); ?>
