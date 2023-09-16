@@ -20,7 +20,7 @@ if ( $paged >= 2 || $page >= 2 ) {
 <?php }} ?>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
-		<link href="http://fonts.googleapis.com/css?family=Tinos:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Tinos:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
 		<!--<script src="js/respond.min.js"></script>-->
 <?php wp_head(); ?>
@@ -65,6 +65,6 @@ if ( $paged >= 2 || $page >= 2 ) {
 <?php /* REMOVED FOR ARCHIVE
 						<a class="rss" href="/feed/atom/">RSS Feed</a>
 */ ?>
-						<a href="http://twitter.com/xheightblog" class="socialite twitter follow" data-show-count="true" data-lang="en" target="_blank">Follow @xheightblog</a>
+						<a href="https://twitter.com/xheightblog" class="socialite twitter follow" data-show-count="true" data-lang="en" target="_blank">Follow @xheightblog</a>
 					</div>
 				</div>

@@ -15,11 +15,11 @@
 		<footer id="footer" role="contentinfo">
 			<div class="centre">
 				<div class="notice">
-					<p><span>&copy; 2001&ndash;<?= date('Y'); ?> <strong><a href="http://dbushell.com" title="David Bushell &ndash; Graphic &amp; Web Design">David Bushell</a></strong></span></p>
+					<p><span>&copy; 2001&ndash;<?= date('Y'); ?> <strong><a href="https://dbushell.com" title="David Bushell &ndash; Graphic &amp; Web Design">David Bushell</a></strong></span></p>
 				</div>
 			</div>
 		</footer>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="<?php echo get_bloginfo('template_directory'); ?>/js/jquery-1.6.2.min.js"><\/script>')</script>
 		<script src="<?php echo get_bloginfo('template_directory'); ?>/js/xheight.js"></script>
 		<script>
@@ -34,18 +34,6 @@
 
 			Socialite.load();
 		</script>
-		<script type="text/javascript">
-		
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-9497100-8']);
-		  _gaq.push(['_trackPageview']);
-		
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-		
-		</script>
+
 	</body>
 </html>

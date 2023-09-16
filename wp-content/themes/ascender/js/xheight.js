@@ -16,27 +16,27 @@ window.Socialite=function(a,b,c){var d={},e={},f={},g={},h={},i={},j={},k=a.setT
  * xheight
  * http://www.xheight.co.uk
  *
- * Copyright (c) 2011 David Bushell http://dbushell.com
+ * Copyright (c) 2011 David Bushell https://dbushell.com
  * All rights reserved
  */
 
 window.xheight = (function(window, document, undefined) {
-	
+
 	var xheight = { },
-	
+
 	docElement = document.documentElement,
 	docHead = document.head || document.getElementsByTagName('head')[0],
 	docObj = $(document.documentElement);
-	
+
 	xheight.init = function(a)
 	{
 		if (xheight._init) return; xheight._init = true;
-		
+
 		xheight.mouseTimeout = setTimeout(xheight.onMouseTimeout, 5000);
 		$(document).bind('mousemove', xheight.onMouseMove).bind('scroll', xheight.onScroll);
-	
+
 		xheight.logoTop = /*$('#bar').height()*/ + $('#logo').position().top +  $('#logo').height();
-		
+
 		$('#return').bind('click', function()
 		{
 			$('html:not(:animated),body:not(:animated)').animate({ 'scrollTop': 0 }, $(document).scrollTop() / 2, function() {
@@ -44,20 +44,20 @@ window.xheight = (function(window, document, undefined) {
 			});
 			return false;
 		});
-		
+
 		xheight.template = a.template;
 		xheight.home = a.home;
 
 		/* REMOVED FOR ARCHIVE
 
 		if (xheight.home && xheight.template === 'articles') {
-			
+
 			xheight.articles = { page: a.page, ppp: a.ppp, total: a.total };
 			xheight.initArticles();
 		}
 		*/
 	};
-	
+
 	xheight.initArticles = function()
 	{
 			var x = xheight.articles;
@@ -97,8 +97,8 @@ window.xheight = (function(window, document, undefined) {
 				return false;
 			});
 	};
-	
-	
+
+
 	xheight.onMouseMove = function()
 	{
 		xheight.mouseIdle = false;
@@ -106,7 +106,7 @@ window.xheight = (function(window, document, undefined) {
 		xheight.mouseTimeout = setTimeout(xheight.onMouseTimeout, 5000);
 		docObj.removeClass('mouse-idle');
 	};
-	
+
 	xheight.onMouseTimeout = function()
 	{
 		if (xheight.mouseIdle) return;
@@ -114,11 +114,11 @@ window.xheight = (function(window, document, undefined) {
 		clearTimeout(xheight.mouseTimeout);
 		docElement.className += ' mouse-idle';
 	};
-	
+
 	xheight.onScroll = function()
 	{
 		var scrollTop = $(document).scrollTop();
-		
+
 		if (scrollTop == 0 && xheight.mouseIdle) {
 			xheight.onMouseMove();
 		}
@@ -132,7 +132,7 @@ window.xheight = (function(window, document, undefined) {
 			docObj.removeClass('logo-hidden');
 		}
 	};
-	
+
 	return xheight;
-	
+
 })(this, this.document);

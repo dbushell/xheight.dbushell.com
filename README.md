@@ -7,4 +7,4 @@ A collaborative blog I ran between 2011 and 2012, formerly xheight.co.uk.
 
 * * *
 
-Copyright © [David Bushell](http://dbushell.com) | [@dbushell](http://twitter.com/dbushell)
+Copyright © [David Bushell](https://dbushell.com) | [@dbushell](https://twitter.com/dbushell)
